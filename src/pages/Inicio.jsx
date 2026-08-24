@@ -6,6 +6,7 @@ import shopiPreview from '../assets/shopi-preview.png'
 import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
 import StarField from '../components/StarField'
+import PricingCards from '../components/PricingCards'
 
 const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
@@ -230,16 +231,39 @@ function Inicio() {
         </div>
       </section>
 
+      <section className="border-t border-edge px-6 pt-8 pb-10 md:hidden">
+        <Reveal className="mx-auto max-w-6xl text-center">
+          <h2 className="text-2xl font-extrabold text-ink">{t.planes.titulo}</h2>
+          <p className="mx-auto mt-3 max-w-xl text-slate">{t.planes.subtitulo}</p>
+        </Reveal>
+
+        <div className="mx-auto mt-10 max-w-6xl">
+          <PricingCards />
+        </div>
+
+        <div className="mt-8 text-center">
+          <Link to="/servicios" className="text-sm font-semibold text-signalDark hover:underline">
+            {t.planes.verTodos}
+          </Link>
+        </div>
+      </section>
+
       <section className="bg-canvas px-6 py-10">
         <div className="mx-auto max-w-6xl">
           <Reveal as="p" className="text-xs font-bold uppercase tracking-widest text-signalDark">
             {t.compromisos.eyebrow}
           </Reveal>
-          <div className="mt-6 grid gap-10 md:grid-cols-3">
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
             {t.compromisos.items.map((item, index) => (
-              <Reveal key={item.title} delay={index * 100}>
-                <div className="flex items-center gap-2 text-signalDark">
-                  {COMMITMENT_ICONS[item.icon]}
+              <Reveal
+                key={item.title}
+                delay={index * 100}
+                className="group rounded-2xl border border-edge bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-signal/40 hover:shadow-xl hover:shadow-signal/10"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-signal/10 text-signalDark transition-colors duration-300 group-hover:bg-signal group-hover:text-white">
+                    {COMMITMENT_ICONS[item.icon]}
+                  </div>
                   <h3 className="text-base font-bold text-ink">{item.title}</h3>
                 </div>
                 <p className="mt-3 text-sm text-slate">{item.detail}</p>

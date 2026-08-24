@@ -224,6 +224,7 @@ export const translations = {
     planes: {
       titulo: 'Planes de Desarrollo Web',
       subtitulo: 'Soluciones escalables diseñadas para convertir visitas en clientes.',
+      verTodos: 'Ver todos los planes →',
       entregaLabel: 'Entrega',
       items: [
         {
@@ -620,6 +621,7 @@ export const translations = {
     planes: {
       titulo: 'Web Development Plans',
       subtitulo: 'Scalable solutions designed to turn visits into customers.',
+      verTodos: 'See all plans →',
       entregaLabel: 'Delivery',
       items: [
         {

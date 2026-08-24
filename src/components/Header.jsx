@@ -27,8 +27,10 @@ function Header() {
               to={link.to}
               end={link.to === '/'}
               className={({ isActive }) =>
-                `text-sm font-medium transition-colors ${
-                  isActive ? 'text-signal' : 'text-muted hover:text-paper'
+                `relative py-1 text-sm font-medium transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-signal after:to-transparent after:transition-transform after:duration-500 after:ease-out after:content-[''] ${
+                  isActive
+                    ? 'text-signal after:scale-x-100'
+                    : 'text-muted hover:text-paper hover:after:scale-x-100'
                 }`
               }
             >
@@ -55,7 +57,9 @@ function Header() {
             to={link.to}
             end={link.to === '/'}
             className={({ isActive }) =>
-              `text-xs font-medium ${isActive ? 'text-signal' : 'text-muted'}`
+              `relative pb-1.5 text-xs font-medium transition-colors after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-full after:origin-center after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-signal after:to-transparent after:transition-transform after:duration-500 after:ease-out after:content-[''] ${
+                isActive ? 'text-signal after:scale-x-100' : 'text-muted'
+              }`
             }
           >
             {link.label}
