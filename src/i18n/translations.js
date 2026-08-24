@@ -67,7 +67,7 @@ export const translations = {
       subtitulo:
         'Llevemos tu presencia digital al siguiente nivel. Platícanos tu proyecto y te preparamos una propuesta a medida.',
       boton: 'Hablar por WhatsApp',
-      nota: 'Respondemos en menos de 1 hora.',
+      nota: 'Respondemos en menos de 1 hora (horario laboral).',
     },
     compromisos: {
       eyebrow: 'Nuestros compromisos',
@@ -110,7 +110,7 @@ export const translations = {
       secciones: [
         {
           titulo: '1. Responsable del Tratamiento',
-          texto: 'Titular: Novakode\nUbicación: Valencia, Venezuela (servicio global)\nContacto: hola@novakode.dev',
+          texto: 'Titular: Novakode\nUbicación: Valencia, Venezuela (servicio global)\nContacto: novakode.studio@gmail.com',
         },
         {
           titulo: '2. Qué información recopilamos',
@@ -130,7 +130,7 @@ export const translations = {
         {
           titulo: '5. Tus derechos',
           texto:
-            'Como usuario, tienes derecho a acceder, rectificar o solicitar la eliminación de tus datos ("derecho al olvido") en cualquier momento. Solo tienes que escribirnos a hola@novakode.dev y gestionaremos tu solicitud en menos de 48 horas.',
+            'Como usuario, tienes derecho a acceder, rectificar o solicitar la eliminación de tus datos ("derecho al olvido") en cualquier momento. Solo tienes que escribirnos a novakode.studio@gmail.com y gestionaremos tu solicitud en menos de 48 horas.',
         },
         {
           titulo: '6. Seguridad',
@@ -218,7 +218,7 @@ export const translations = {
         titulo: '¿Dudas sobre cuál plan elegir?',
         subtitulo: 'Solicita tu auditoría gratuita y te diremos exactamente qué necesita tu negocio en este momento.',
         boton: 'Hablar con el equipo',
-        nota: 'Respondemos en menos de 1 hora.',
+        nota: 'Respondemos en menos de 1 hora (horario laboral).',
       },
     },
     planes: {
@@ -354,8 +354,11 @@ export const translations = {
       visitarSitio: 'Visitar sitio →',
     },
     contacto_page: {
-      titulo: 'Contacto',
-      subtitulo: 'Cuéntanos de tu negocio y qué necesitas. Te respondemos en menos de 24 horas.',
+      eyebrow: 'Contacto',
+      tituloBefore: '¿Listo para hacer ',
+      tituloAccent: 'despegar',
+      tituloAfter: ' tu proyecto?',
+      subtitulo: 'Cuéntanos qué necesitas y te respondemos en menos de 1 hora en horario laboral.',
       form: {
         nombre: 'Nombre',
         correo: 'Correo',
@@ -368,6 +371,27 @@ export const translations = {
       whatsapp: 'WhatsApp',
       escribirDirecto: 'Escribir directo →',
       correoLabel: 'Correo',
+      sobreMi: {
+        eyebrow: 'Sobre Novakode',
+        intro: 'Impulsamos negocios con desarrollo web de alto rendimiento, sin burocracia ni complicaciones.',
+        items: [
+          {
+            icon: 'bolt',
+            titulo: 'Velocidad y Conversión',
+            detalle: 'Sitios optimizados para cargar al instante y transformar visitas en clientes.',
+          },
+          {
+            icon: 'direct',
+            titulo: 'Trato Directo',
+            detalle: 'Comunicación clara y transparente de principio a fin, sin intermediarios.',
+          },
+          {
+            icon: 'target',
+            titulo: 'Sin Tecnicismos',
+            detalle: 'Soluciones funcionales explicadas en tu mismo idioma.',
+          },
+        ],
+      },
     },
   },
 
@@ -439,7 +463,7 @@ export const translations = {
       subtitulo:
         "Let's take your digital presence to the next level. Tell us about your project and we'll put together a custom proposal.",
       boton: 'Chat on WhatsApp',
-      nota: 'We reply in under 1 hour.',
+      nota: 'We reply in under 1 hour (business hours).',
     },
     compromisos: {
       eyebrow: 'Our commitments',
@@ -482,7 +506,7 @@ export const translations = {
       secciones: [
         {
           titulo: '1. Data controller',
-          texto: 'Owner: Novakode\nLocation: Valencia, Venezuela (global service)\nContact: hola@novakode.dev',
+          texto: 'Owner: Novakode\nLocation: Valencia, Venezuela (global service)\nContact: novakode.studio@gmail.com',
         },
         {
           titulo: '2. What information we collect',
@@ -502,7 +526,7 @@ export const translations = {
         {
           titulo: '5. Your rights',
           texto:
-            'As a user, you have the right to access, correct or request deletion of your data ("right to be forgotten") at any time. Just write to hola@novakode.dev and we will handle your request within 48 hours.',
+            'As a user, you have the right to access, correct or request deletion of your data ("right to be forgotten") at any time. Just write to novakode.studio@gmail.com and we will handle your request within 48 hours.',
         },
         {
           titulo: '6. Security',
@@ -590,7 +614,7 @@ export const translations = {
         titulo: 'Not sure which plan to choose?',
         subtitulo: 'Request your free audit and we will tell you exactly what your business needs right now.',
         boton: 'Talk to the team',
-        nota: 'We reply in under 1 hour.',
+        nota: 'We reply in under 1 hour (business hours).',
       },
     },
     planes: {
@@ -725,8 +749,11 @@ export const translations = {
       visitarSitio: 'Visit site →',
     },
     contacto_page: {
-      titulo: 'Contact',
-      subtitulo: "Tell us about your business and what you need. We'll reply within 24 hours.",
+      eyebrow: 'Contact',
+      tituloBefore: 'Ready to ',
+      tituloAccent: 'launch',
+      tituloAfter: ' your project?',
+      subtitulo: "Tell us what you need and we reply within 1 hour, during business hours.",
       form: {
         nombre: 'Name',
         correo: 'Email',
@@ -739,6 +766,27 @@ export const translations = {
       whatsapp: 'WhatsApp',
       escribirDirecto: 'Message directly →',
       correoLabel: 'Email',
+      sobreMi: {
+        eyebrow: 'About Novakode',
+        intro: 'We power businesses with high-performance web development, without red tape or complications.',
+        items: [
+          {
+            icon: 'bolt',
+            titulo: 'Speed & Conversion',
+            detalle: 'Sites optimized to load instantly and turn visitors into customers.',
+          },
+          {
+            icon: 'direct',
+            titulo: 'Direct Relationship',
+            detalle: 'Clear, transparent communication from start to finish, no intermediaries.',
+          },
+          {
+            icon: 'target',
+            titulo: 'No Jargon',
+            detalle: 'Working solutions explained in plain language.',
+          },
+        ],
+      },
     },
   },
 }

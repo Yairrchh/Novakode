@@ -99,7 +99,7 @@ function WhatsAppButton() {
   return (
     <a
       ref={btnRef}
-      href="https://wa.me/"
+      href="https://wa.link/ull0cb"
       target="_blank"
       rel="noreferrer"
       aria-label="Escribir por WhatsApp"

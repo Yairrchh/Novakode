@@ -15,7 +15,7 @@ function Portafolio() {
   const p = t.portafolio_page
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-20">
+    <div className="mx-auto max-w-6xl px-6 py-12">
       <Reveal>
         <span className="text-xs font-bold uppercase tracking-widest text-signalDark">{p.eyebrow}</span>
         <h1 className="mt-3 text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">

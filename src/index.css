@@ -36,9 +36,20 @@
 .star {
   position: absolute;
   border-radius: 9999px;
-  background: #ffffff;
+  background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0.75) 35%, rgba(255, 255, 255, 0) 72%);
   opacity: 0.15;
-  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.55);
+  animation-name: twinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+}
+
+.star-sparkle {
+  position: absolute;
+  color: #ffffff;
+  opacity: 0.15;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.85));
   animation-name: twinkle;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;

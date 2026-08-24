@@ -249,14 +249,15 @@ function Inicio() {
         </div>
       </section>
 
-      <section className="bg-night px-6 py-20 text-center">
-        <Reveal>
+      <section className="relative overflow-hidden bg-night px-6 py-20 text-center">
+        <StarField starCount={18} shootingStars={false} />
+        <Reveal className="relative">
           <h2 className="mx-auto max-w-2xl text-3xl font-extrabold text-paper md:text-4xl">
             {t.ctaFinal.titulo}
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-[#dbe4ef]">{t.ctaFinal.subtitulo}</p>
           <a
-            href="https://wa.me/"
+            href="https://wa.link/ull0cb"
             target="_blank"
             rel="noreferrer"
             className="mt-8 inline-block rounded-full bg-signal px-7 py-3.5 text-sm font-bold text-night shadow-[0_0_24px_rgba(41,197,246,0.35)] transition-opacity hover:opacity-90"

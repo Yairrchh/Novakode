@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
+import StarField from '../components/StarField'
 
 const CheckIcon = ({ className }) => (
   <svg viewBox="0 0 24 24" fill="none" strokeWidth="2.2" stroke="currentColor" className={className}>
@@ -51,7 +52,7 @@ function Servicios() {
 
   return (
     <>
-      <div className="mx-auto max-w-6xl px-6 pt-10 pb-10">
+      <div className="mx-auto max-w-6xl px-6 pt-12 pb-10">
         <Reveal className="text-center">
           <h1 className="text-3xl font-extrabold text-ink md:text-4xl">{planes.titulo}</h1>
           <p className="mx-auto mt-3 max-w-xl text-slate">{planes.subtitulo}</p>
@@ -62,7 +63,7 @@ function Servicios() {
             <Reveal
               key={plan.nombre}
               delay={index * 100}
-              className={`relative flex h-full flex-col rounded-2xl p-6 ${
+              className={`relative h-full overflow-hidden rounded-2xl p-6 ${
                 plan.dark
                   ? 'border border-night bg-night text-paper'
                   : plan.destacado
@@ -70,6 +71,8 @@ function Servicios() {
                     : 'border-2 border-slate/25 bg-card'
               }`}
             >
+              {plan.dark && <StarField starCount={14} shootingStars={false} />}
+              <div className="relative z-10 flex h-full flex-col">
               {plan.badge && (
                 <span
                   className={`inline-flex w-fit items-center gap-1.5 self-start rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-widest ${
@@ -158,6 +161,7 @@ function Servicios() {
               >
                 {plan.boton} →
               </Link>
+              </div>
             </Reveal>
           ))}
         </div>
@@ -195,8 +199,9 @@ function Servicios() {
         </Reveal>
       </div>
 
-      <section className="bg-night px-6 py-20 text-center">
-        <Reveal>
+      <section className="relative overflow-hidden bg-night px-6 py-20 text-center">
+        <StarField starCount={18} shootingStars={false} />
+        <Reveal className="relative">
         <h2 className="mx-auto max-w-2xl text-2xl font-extrabold text-paper md:text-3xl">
           {p.ctaPlanes.titulo}
         </h2>
