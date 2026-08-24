@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useLanguage } from '../i18n/LanguageContext'
+import Reveal from '../components/Reveal'
 
 function Contacto() {
   const { t } = useLanguage()
@@ -13,11 +14,13 @@ function Contacto() {
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
-      <h1 className="text-3xl font-extrabold text-ink md:text-4xl">{p.titulo}</h1>
-      <p className="mt-4 max-w-xl text-slate">{p.subtitulo}</p>
+      <Reveal>
+        <h1 className="text-3xl font-extrabold text-ink md:text-4xl">{p.titulo}</h1>
+        <p className="mt-4 max-w-xl text-slate">{p.subtitulo}</p>
+      </Reveal>
 
       <div className="mt-16 grid gap-16 md:grid-cols-2">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+        <Reveal as="form" onSubmit={handleSubmit} className="flex flex-col gap-6">
           <label className="flex flex-col gap-2">
             <span className="text-xs font-bold uppercase tracking-widest text-slate">{p.form.nombre}</span>
             <input
@@ -75,9 +78,9 @@ function Contacto() {
               {p.form.enviado}
             </p>
           )}
-        </form>
+        </Reveal>
 
-        <div className="flex flex-col gap-8">
+        <Reveal delay={120} className="flex flex-col gap-8">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-slate">{p.whatsapp}</span>
             <a
@@ -99,7 +102,7 @@ function Contacto() {
               hola@novakode.dev
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   )
