@@ -50,12 +50,12 @@ export const translations = {
       },
       {
         nombre: 'Todoticket',
-        resumen: 'Plataforma de gestión y compra de tickets para conciertos',
+        resumen: 'Plataforma de reserva y compra de boletos de vuelo',
         comingSoon: false,
       },
       {
         nombre: 'Shopi',
-        resumen: 'Tienda de ropa online con catálogo y carrito de compras',
+        resumen: 'Tienda online multi-categoría con catálogo y carrito de compras',
         comingSoon: false,
       },
     ],
@@ -339,16 +339,16 @@ export const translations = {
         },
         {
           nombre: 'Todoticket',
-          tipo: 'Plataforma de tickets para eventos',
+          tipo: 'Plataforma de reserva de vuelos',
           descripcion:
-            'Plataforma para la gestión y venta de tickets de conciertos y eventos en vivo. Los organizadores publican sus eventos y controlan el aforo disponible, mientras los asistentes compran sus entradas de forma rápida y segura desde cualquier dispositivo.',
+            'Plataforma para la búsqueda y reserva de vuelos entre destinos en América. Los usuarios eligen origen y destino, agregan acompañantes y reciben su boleto de forma instantánea desde cualquier dispositivo.',
           stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
         },
         {
           nombre: 'Shopi',
-          tipo: 'Tienda online de ropa',
+          tipo: 'Tienda online multi-categoría',
           descripcion:
-            'Tienda online de ropa con catálogo de productos organizado por categorías, tallas y colores, además de un carrito de compras completo para gestionar los pedidos de principio a fin.',
+            'Tienda online con catálogo de productos organizado por categorías (ropa, electrónica, muebles, belleza y más), filtros de búsqueda y un carrito de compras completo para gestionar los pedidos de principio a fin.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase'],
         },
       ],
@@ -447,12 +447,12 @@ export const translations = {
       },
       {
         nombre: 'Todoticket',
-        resumen: 'Ticket management and purchase platform for concerts',
+        resumen: 'Flight booking and ticket purchase platform',
         comingSoon: false,
       },
       {
         nombre: 'Shopi',
-        resumen: 'Online clothing store with catalog and shopping cart',
+        resumen: 'Multi-category online store with catalog and shopping cart',
         comingSoon: false,
       },
     ],
@@ -735,16 +735,16 @@ export const translations = {
         },
         {
           nombre: 'Todoticket',
-          tipo: 'Ticket platform for live events',
+          tipo: 'Flight booking platform',
           descripcion:
-            'Platform for managing and selling tickets for concerts and live events. Organizers publish events and track available capacity, while attendees buy their tickets quickly and securely from any device.',
+            'Platform for searching and booking flights across destinations in the Americas. Users choose their origin and destination, add companions, and receive their ticket instantly from any device.',
           stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
         },
         {
           nombre: 'Shopi',
-          tipo: 'Online clothing store',
+          tipo: 'Multi-category online store',
           descripcion:
-            'Online clothing store with a product catalog organized by category, size, and color, plus a full shopping cart to manage orders from start to finish.',
+            'Online store with a product catalog organized by category (clothing, electronics, furniture, beauty, and more), search filters, and a full shopping cart to manage orders from start to finish.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase'],
         },
       ],
