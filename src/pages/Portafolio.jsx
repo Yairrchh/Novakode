@@ -3,11 +3,13 @@ import Reveal from '../components/Reveal'
 import olaxPreview from '../assets/olax-preview.png'
 import todoticketPreview from '../assets/todoticket-preview.png'
 import shopiPreview from '../assets/shopi-preview.png'
+import airesvalPreview from '../assets/airesval-preview.png'
 
 const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
   Todoticket: todoticketPreview,
   Shopi: shopiPreview,
+  AiresVal: airesvalPreview,
 }
 
 function Portafolio() {
@@ -40,7 +42,7 @@ function Portafolio() {
                 <img
                   src={PROJECT_PREVIEWS[proyecto.nombre]}
                   alt={proyecto.nombre}
-                  className="h-full w-full object-contain object-top transition-transform duration-300 group-hover:scale-105"
+                  className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 

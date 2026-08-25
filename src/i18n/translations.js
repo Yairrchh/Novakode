@@ -17,7 +17,7 @@ export const translations = {
       ctaSecondary: 'Hablemos de tu proyecto',
     },
     stackLabel: 'Tecnología de alto rendimiento —',
-    stackItems: ['Carga rápida', 'SEO listo', '100% Seguras'],
+    stackItems: ['Carga rápida', 'SEO listo', '100% Seguras', '100% Adaptable a móviles'],
     queHago: 'Nuestros servicios',
     servicios: [
       {
@@ -338,18 +338,28 @@ export const translations = {
           url: 'https://olaxlatamoficial.com/',
         },
         {
-          nombre: 'Todoticket',
-          tipo: 'Plataforma de reserva de vuelos',
-          descripcion:
-            'Plataforma para la búsqueda y reserva de vuelos entre destinos en América. Los usuarios eligen origen y destino, agregan acompañantes y reciben su boleto de forma instantánea desde cualquier dispositivo.',
-          stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
-        },
-        {
           nombre: 'Shopi',
           tipo: 'Tienda online multi-categoría',
           descripcion:
             'Tienda online con catálogo de productos organizado por categorías (ropa, electrónica, muebles, belleza y más), filtros de búsqueda y un carrito de compras completo para gestionar los pedidos de principio a fin.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase'],
+          url: 'https://clinquant-chimera-0ea617.netlify.app/',
+        },
+        {
+          nombre: 'AiresVal',
+          tipo: 'Página web a medida para cliente (demo)',
+          descripcion:
+            'Sistema de gestión de fichas técnicas para inspección de equipos de aire acondicionado: registro de datos del equipo, condiciones de operación y panel con historial de fichas. Esta es una demo — la versión real está en producción para el cliente, de forma privada.',
+          stack: ['Next.js', 'Docker', 'PostgreSQL', 'Tailwind'],
+          url: 'https://gilded-liger-78cba2.netlify.app/',
+        },
+        {
+          nombre: 'Todoticket',
+          tipo: 'Plataforma de reserva de vuelos',
+          descripcion:
+            'Plataforma para la búsqueda y reserva de vuelos entre destinos en América. Los usuarios eligen origen y destino, agregan acompañantes y reciben su boleto de forma instantánea desde cualquier dispositivo.',
+          stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
+          url: 'https://cozy-axolotl-04f769.netlify.app/',
         },
       ],
       visitarSitio: 'Visitar sitio →',
@@ -414,7 +424,7 @@ export const translations = {
       ctaSecondary: "Let's talk about your project",
     },
     stackLabel: 'High-performance technology —',
-    stackItems: ['Fast loading', 'SEO ready', '100% Secure'],
+    stackItems: ['Fast loading', 'SEO ready', '100% Secure', '100% Mobile-Friendly'],
     queHago: 'Our services',
     servicios: [
       {
@@ -734,18 +744,28 @@ export const translations = {
           url: 'https://olaxlatamoficial.com/',
         },
         {
-          nombre: 'Todoticket',
-          tipo: 'Flight booking platform',
-          descripcion:
-            'Platform for searching and booking flights across destinations in the Americas. Users choose their origin and destination, add companions, and receive their ticket instantly from any device.',
-          stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
-        },
-        {
           nombre: 'Shopi',
           tipo: 'Multi-category online store',
           descripcion:
             'Online store with a product catalog organized by category (clothing, electronics, furniture, beauty, and more), search filters, and a full shopping cart to manage orders from start to finish.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase'],
+          url: 'https://clinquant-chimera-0ea617.netlify.app/',
+        },
+        {
+          nombre: 'AiresVal',
+          tipo: 'Custom website for a client (demo)',
+          descripcion:
+            'Technical inspection management system for air conditioning equipment: equipment data entry, operating conditions, and a panel with a history of records. This is a demo — the real version is live in production for the client, privately.',
+          stack: ['Next.js', 'Docker', 'PostgreSQL', 'Tailwind'],
+          url: 'https://gilded-liger-78cba2.netlify.app/',
+        },
+        {
+          nombre: 'Todoticket',
+          tipo: 'Flight booking platform',
+          descripcion:
+            'Platform for searching and booking flights across destinations in the Americas. Users choose their origin and destination, add companions, and receive their ticket instantly from any device.',
+          stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
+          url: 'https://cozy-axolotl-04f769.netlify.app/',
         },
       ],
       visitarSitio: 'Visit site →',
