@@ -4,12 +4,16 @@ import olaxPreview from '../assets/olax-preview.png'
 import todoticketPreview from '../assets/todoticket-preview.png'
 import shopiPreview from '../assets/shopi-preview.png'
 import airesvalPreview from '../assets/airesval-preview.png'
+import veraPreview from '../assets/vera-preview.png'
+import casaclinicaPreview from '../assets/casaclinica-preview.png'
 
 const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
   Todoticket: todoticketPreview,
   Shopi: shopiPreview,
   AiresVal: airesvalPreview,
+  Vera: veraPreview,
+  'Casa Clínica': casaclinicaPreview,
 }
 
 function Portafolio() {

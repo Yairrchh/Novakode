@@ -230,12 +230,12 @@ export const translations = {
         {
           nombre: 'Plan Esencial',
           descripcion:
-            'Tu marca presentada en hasta 3 secciones de alto impacto. Perfecto para validar ideas y negocios pequeños.',
+            'Landing page de una sola página, con todo tu mensaje en un solo scroll. Perfecto para validar ideas y negocios pequeños.',
           precio: '199',
           moneda: 'USD',
           tipoPago: 'Pago único',
           features: [
-            'Arquitectura web de hasta 3 secciones',
+            'Landing page de una sola página',
             'UX/UI optimizado para conversión',
             'Formulario de contacto + botón de WhatsApp',
             'SEO on-page (estructura semántica)',
@@ -258,7 +258,7 @@ export const translations = {
           features: [
             'Arquitectura web de 5+ secciones',
             'Diseño premium y sistema de marca',
-            'Integración de catálogo de productos/servicios',
+            'Sección de productos/servicios',
             'Formulario avanzado de cotización / leads',
             'Integración con Google Analytics',
             'SEO técnico avanzado + sitemap',
@@ -280,7 +280,7 @@ export const translations = {
             'Paneles privados para tu equipo',
             'Integraciones a medida (API, inventario)',
             'Notificaciones automáticas de pedidos',
-            'Consultoría de estrategia digital',
+            'Planificación técnica y arquitectura del proyecto',
           ],
           entrega: 'A definir según alcance',
           boton: 'Agendar Consultoría',
@@ -336,6 +336,22 @@ export const translations = {
             'Sitio para un mayorista de tecnología en Miami. Incluye catálogo de productos filtrable por categoría, listado de distribuidores autorizados por región y un panel privado, con autenticación, para que el equipo administre el contenido sin depender de nosotros.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase', 'EmailJS'],
           url: 'https://olaxlatamoficial.com/',
+        },
+        {
+          nombre: 'Vera',
+          tipo: 'Sitio web inmobiliario',
+          descripcion:
+            'Sitio para una inmobiliaria en Buenos Aires. Incluye buscador de propiedades con filtros de compra o alquiler por zona, y un botón directo para agendar visitas.',
+          stack: ['React', 'Vite', 'Tailwind'],
+          url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
+        },
+        {
+          nombre: 'Casa Clínica',
+          tipo: 'Catálogo online (demo)',
+          descripcion:
+            'Sitio para un distribuidor de insumos ortopédicos: catálogo de productos por línea, fichas por categoría y solicitud de cotización directa por WhatsApp. Esta es una demo — proyecto propio de portafolio, sin cliente real detrás.',
+          stack: ['React', 'Vite', 'Tailwind'],
+          url: 'https://shiny-paletas-87fb1d.netlify.app/',
         },
         {
           nombre: 'Shopi',
@@ -637,12 +653,12 @@ export const translations = {
         {
           nombre: 'Essential Plan',
           descripcion:
-            'Your brand presented across up to 3 high-impact sections. Perfect for validating ideas and small businesses.',
+            'A single-page landing page with your whole message in one scroll. Perfect for validating ideas and small businesses.',
           precio: '199',
           moneda: 'USD',
           tipoPago: 'One-time payment',
           features: [
-            'Up to 3-section web architecture',
+            'Single-page landing page',
             'UX/UI optimized for conversion',
             'Contact form + WhatsApp button',
             'On-page SEO (semantic structure)',
@@ -665,7 +681,7 @@ export const translations = {
           features: [
             '5+ section web architecture',
             'Premium design and brand system',
-            'Product/service catalog integration',
+            'Products/services section',
             'Advanced quote / lead form',
             'Google Analytics integration',
             'Advanced technical SEO + sitemap',
@@ -687,7 +703,7 @@ export const translations = {
             'Private panels for your team',
             'Custom integrations (API, inventory)',
             'Automatic order notifications',
-            'Digital strategy consulting',
+            'Technical planning and project architecture',
           ],
           entrega: 'Scoped per project',
           boton: 'Book a Consultation',
@@ -742,6 +758,22 @@ export const translations = {
             'Site for a technology wholesaler in Miami. Includes a product catalog filterable by category, a directory of authorized distributors by region, and a private, authenticated panel so the team can manage content without depending on us.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase', 'EmailJS'],
           url: 'https://olaxlatamoficial.com/',
+        },
+        {
+          nombre: 'Vera',
+          tipo: 'Real estate website',
+          descripcion:
+            'Website for a real estate agency in Buenos Aires. Includes a property search with buy/rent filters by area, and a direct button to schedule visits.',
+          stack: ['React', 'Vite', 'Tailwind'],
+          url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
+        },
+        {
+          nombre: 'Casa Clínica',
+          tipo: 'Online catalog (demo)',
+          descripcion:
+            'Website for an orthopedic supplies distributor: product catalog by line, category pages, and direct quote requests via WhatsApp. This is a demo — a personal portfolio project, no real client behind it.',
+          stack: ['React', 'Vite', 'Tailwind'],
+          url: 'https://shiny-paletas-87fb1d.netlify.app/',
         },
         {
           nombre: 'Shopi',
