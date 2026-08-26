@@ -355,9 +355,9 @@ export const translations = {
         },
         {
           nombre: 'Todoticket',
-          tipo: 'Plataforma de reserva de vuelos',
+          tipo: 'Plataforma de reserva de vuelos (demo, en construcción)',
           descripcion:
-            'Plataforma para la búsqueda y reserva de vuelos entre destinos en América. Los usuarios eligen origen y destino, agregan acompañantes y reciben su boleto de forma instantánea desde cualquier dispositivo.',
+            'Plataforma para la búsqueda y reserva de vuelos entre destinos en América. Los usuarios eligen origen y destino, agregan acompañantes y reciben su boleto de forma instantánea desde cualquier dispositivo. Este proyecto sigue en construcción — lo que ves aquí es una demo de su desarrollo actual.',
           stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
           url: 'https://cozy-axolotl-04f769.netlify.app/',
         },
@@ -761,9 +761,9 @@ export const translations = {
         },
         {
           nombre: 'Todoticket',
-          tipo: 'Flight booking platform',
+          tipo: 'Flight booking platform (demo, in progress)',
           descripcion:
-            'Platform for searching and booking flights across destinations in the Americas. Users choose their origin and destination, add companions, and receive their ticket instantly from any device.',
+            'Platform for searching and booking flights across destinations in the Americas. Users choose their origin and destination, add companions, and receive their ticket instantly from any device. This project is still in progress — what you see here is a demo of its current development.',
           stack: ['Next.js', 'Tailwind', 'PostgreSQL'],
           url: 'https://cozy-axolotl-04f769.netlify.app/',
         },
