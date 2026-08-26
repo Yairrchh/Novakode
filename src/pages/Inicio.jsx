@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import heroNebula from '../assets/hero-supernova.jpg'
 import olaxPreview from '../assets/olax-preview.png'
-import todoticketPreview from '../assets/todoticket-preview.png'
-import shopiPreview from '../assets/shopi-preview.png'
+import veraPreview from '../assets/vera-preview.png'
+import casaclinicaPreview from '../assets/casaclinica-preview.png'
 import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
 import StarField from '../components/StarField'
@@ -10,8 +10,8 @@ import PricingCards from '../components/PricingCards'
 
 const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
-  Todoticket: todoticketPreview,
-  Shopi: shopiPreview,
+  Vera: veraPreview,
+  'Casa Clínica': casaclinicaPreview,
 }
 
 const SERVICE_ICONS = {

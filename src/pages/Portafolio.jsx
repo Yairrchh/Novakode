@@ -42,11 +42,11 @@ function Portafolio() {
               {...(proyecto.url ? { href: proyecto.url, target: '_blank', rel: 'noreferrer' } : {})}
               className="group flex flex-col overflow-hidden rounded-2xl border border-edge bg-card transition-colors hover:border-signal"
             >
-              <div className="aspect-video overflow-hidden bg-night/[0.03]">
+              <div className="aspect-[21/9] overflow-hidden bg-night/[0.03]">
                 <img
                   src={PROJECT_PREVIEWS[proyecto.nombre]}
                   alt={proyecto.nombre}
-                  className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  className="h-full w-full object-contain object-top transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
