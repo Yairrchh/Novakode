@@ -51,11 +51,13 @@ export const translations = {
       {
         nombre: 'Vera',
         resumen: 'Buscador de propiedades con filtros de compra y alquiler',
+        url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
         comingSoon: false,
       },
       {
         nombre: 'Casa Clínica',
         resumen: 'Catálogo de insumos ortopédicos con cotización por WhatsApp',
+        url: 'https://shiny-paletas-87fb1d.netlify.app/',
         comingSoon: false,
       },
     ],
@@ -474,11 +476,13 @@ export const translations = {
       {
         nombre: 'Vera',
         resumen: 'Property search with buy and rent filters',
+        url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
         comingSoon: false,
       },
       {
         nombre: 'Casa Clínica',
         resumen: 'Orthopedic supplies catalog with WhatsApp quote requests',
+        url: 'https://shiny-paletas-87fb1d.netlify.app/',
         comingSoon: false,
       },
     ],

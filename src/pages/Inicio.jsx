@@ -198,11 +198,11 @@ function Inicio() {
                   : {})}
                 className="group overflow-hidden rounded-2xl border border-edge bg-card transition-all duration-300 hover:-translate-y-1 hover:border-signal/40 hover:shadow-xl hover:shadow-signal/10"
               >
-                <div className="aspect-video overflow-hidden bg-night/[0.03]">
+                <div className="aspect-[7/3] overflow-hidden bg-night/[0.03]">
                   <img
                     src={PROJECT_PREVIEWS[proyecto.nombre]}
                     alt={proyecto.nombre}
-                    className="h-full w-full object-contain object-top transition-transform duration-300 group-hover:scale-105"
+                    className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
