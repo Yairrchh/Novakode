@@ -49,6 +49,12 @@ export const translations = {
         comingSoon: false,
       },
       {
+        nombre: 'ElectroNova',
+        resumen: 'Demo de tienda mayorista con catálogo y cotización por WhatsApp',
+        url: 'https://amazing-phoenix-5a2161.netlify.app/',
+        comingSoon: false,
+      },
+      {
         nombre: 'Urban Sport',
         resumen: 'Demo de tienda online con carrito editable y pedido por WhatsApp',
         url: 'https://totallooks.netlify.app/',
@@ -354,20 +360,20 @@ export const translations = {
           url: 'https://olaxlatamoficial.com/',
         },
         {
-          nombre: 'Vera',
-          tipo: 'Sitio web inmobiliario',
-          descripcion:
-            'Sitio para una inmobiliaria en Buenos Aires. Incluye buscador de propiedades con filtros de compra o alquiler por zona, y un botón directo para agendar visitas.',
-          stack: ['React', 'Vite', 'Tailwind'],
-          url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
-        },
-        {
           nombre: 'ElectroNova',
           tipo: 'Tienda online al mayor (demo)',
           descripcion:
             'Tienda online mayorista de electrodomésticos: catálogo por categoría (cocina, línea blanca, climatización, televisores y electrónica) con filtros y búsqueda, carrito y solicitud de cotización directa por WhatsApp.',
           stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
           url: 'https://amazing-phoenix-5a2161.netlify.app/',
+        },
+        {
+          nombre: 'Vera',
+          tipo: 'Sitio web inmobiliario',
+          descripcion:
+            'Sitio para una inmobiliaria en Buenos Aires. Incluye buscador de propiedades con filtros de compra o alquiler por zona, y un botón directo para agendar visitas.',
+          stack: ['React', 'Vite', 'Tailwind'],
+          url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
         },
         {
           nombre: 'Casa Clínica',
@@ -493,6 +499,12 @@ export const translations = {
         nombre: 'Olax',
         resumen: 'Website redesign + admin panel',
         url: 'https://olaxlatamoficial.com/',
+        comingSoon: false,
+      },
+      {
+        nombre: 'ElectroNova',
+        resumen: 'Wholesale store demo with catalog and WhatsApp quotes',
+        url: 'https://amazing-phoenix-5a2161.netlify.app/',
         comingSoon: false,
       },
       {
@@ -800,20 +812,20 @@ export const translations = {
           url: 'https://olaxlatamoficial.com/',
         },
         {
-          nombre: 'Vera',
-          tipo: 'Real estate website',
-          descripcion:
-            'Website for a real estate agency in Buenos Aires. Includes a property search with buy/rent filters by area, and a direct button to schedule visits.',
-          stack: ['React', 'Vite', 'Tailwind'],
-          url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
-        },
-        {
           nombre: 'ElectroNova',
           tipo: 'Wholesale online store (demo)',
           descripcion:
             'Wholesale online store for home appliances: catalog by category (kitchen, white goods, climate control, TVs and electronics) with filters and search, a cart, and direct quote requests via WhatsApp.',
           stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
           url: 'https://amazing-phoenix-5a2161.netlify.app/',
+        },
+        {
+          nombre: 'Vera',
+          tipo: 'Real estate website',
+          descripcion:
+            'Website for a real estate agency in Buenos Aires. Includes a property search with buy/rent filters by area, and a direct button to schedule visits.',
+          stack: ['React', 'Vite', 'Tailwind'],
+          url: 'https://exquisite-moonbeam-d6277b.netlify.app/',
         },
         {
           nombre: 'Casa Clínica',

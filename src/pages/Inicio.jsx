@@ -4,6 +4,7 @@ import olaxPreview from '../assets/olax-preview.png'
 import veraPreview from '../assets/vera-preview.png'
 import casaclinicaPreview from '../assets/casaclinica-preview.png'
 import totallooksPreview from '../assets/totallooks-preview.png'
+import milexusPreview from '../assets/milexus-preview.png'
 import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
 import StarField from '../components/StarField'
@@ -14,6 +15,7 @@ const PROJECT_PREVIEWS = {
   Vera: veraPreview,
   'Casa Clínica': casaclinicaPreview,
   'Urban Sport': totallooksPreview,
+  ElectroNova: milexusPreview,
 }
 
 const SERVICE_ICONS = {
@@ -171,14 +173,14 @@ function Inicio() {
           <p className="mx-auto mt-4 max-w-xl text-slate">{t.trabajoReciente.subtitulo}</p>
         </Reveal>
 
-        <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2">
+        <div className="mx-auto mt-12 flex max-w-6xl flex-wrap justify-center gap-6">
           {t.proyectosDestacados.map((proyecto, index) => {
             const CardTag = proyecto.url ? 'a' : 'div'
             return proyecto.comingSoon ? (
               <Reveal
                 key={proyecto.nombre}
                 delay={index * 100}
-                className="overflow-hidden rounded-2xl border border-dashed border-edge bg-card"
+                className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] overflow-hidden rounded-2xl border border-dashed border-edge bg-card"
               >
                 <div className="flex aspect-video items-center justify-center bg-night/[0.03]">
                   <span className="text-xs font-bold uppercase tracking-widest text-slate/50">
@@ -198,7 +200,7 @@ function Inicio() {
                 {...(proyecto.url
                   ? { href: proyecto.url, target: '_blank', rel: 'noreferrer' }
                   : {})}
-                className="group overflow-hidden rounded-2xl border border-edge bg-card transition-all duration-300 hover:-translate-y-1 hover:border-signal/40 hover:shadow-xl hover:shadow-signal/10"
+                className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] group overflow-hidden rounded-2xl border border-edge bg-card transition-all duration-300 hover:-translate-y-1 hover:border-signal/40 hover:shadow-xl hover:shadow-signal/10"
               >
                 <div className="aspect-[7/3] overflow-hidden bg-night/[0.03]">
                   <img
