@@ -171,7 +171,7 @@ function Inicio() {
           <p className="mx-auto mt-4 max-w-xl text-slate">{t.trabajoReciente.subtitulo}</p>
         </Reveal>
 
-        <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2">
+        <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-3">
           {t.proyectosDestacados.map((proyecto, index) => {
             const CardTag = proyecto.url ? 'a' : 'div'
             return proyecto.comingSoon ? (
