@@ -16,8 +16,8 @@ const PROJECT_PREVIEWS = {
   AiresVal: airesvalPreview,
   Vera: veraPreview,
   'Casa Clínica': casaclinicaPreview,
-  'Tienda de ropa deportiva': totallooksPreview,
-  'Distribuidor de electrodomésticos': milexusPreview,
+  'Urban Sport': totallooksPreview,
+  'ElectroNova': milexusPreview,
 }
 
 function Portafolio() {

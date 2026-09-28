@@ -13,7 +13,7 @@ const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
   Vera: veraPreview,
   'Casa Clínica': casaclinicaPreview,
-  'Tienda de ropa deportiva': totallooksPreview,
+  'Urban Sport': totallooksPreview,
 }
 
 const SERVICE_ICONS = {
