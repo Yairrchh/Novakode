@@ -48,13 +48,12 @@ export const translations = {
         url: 'https://olaxlatamoficial.com/',
         comingSoon: false,
       },
-      // Oculto temporalmente hasta tener una copia con marca ficticia.
-      // {
-      //   nombre: 'Tienda de ropa deportiva',
-      //   resumen: 'Demo de tienda online con carrito editable y pedido por WhatsApp',
-      //   url: 'https://totallooks.netlify.app/',
-      //   comingSoon: false,
-      // },
+      {
+        nombre: 'Tienda de ropa deportiva',
+        resumen: 'Demo de tienda online con carrito editable y pedido por WhatsApp',
+        url: 'https://totallooks.netlify.app/',
+        comingSoon: false,
+      },
       {
         nombre: 'Vera',
         resumen: 'Buscador de propiedades con filtros de compra y alquiler',
@@ -338,15 +337,14 @@ export const translations = {
       tituloLinea2: 'despegaron.',
       subtitulo: 'Nuestros trabajos más recientes, en producción y generando ventas ahora mismo.',
       proyectos: [
-        // Oculto temporalmente hasta tener una copia con marca ficticia.
-        // {
-        //   nombre: 'Tienda de ropa deportiva',
-        //   tipo: 'Tienda online (demo)',
-        //   descripcion:
-        //     'Propuesta de tienda online para un negocio de ropa deportiva y calzado: catálogo con filtros y búsqueda, favoritos, carrito editable y pedido directo por WhatsApp. Es una demo — no está en producción ni hay un acuerdo cerrado con el negocio.',
-        //   stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
-        //   url: 'https://totallooks.netlify.app/',
-        // },
+        {
+          nombre: 'Tienda de ropa deportiva',
+          tipo: 'Tienda online (demo)',
+          descripcion:
+            'Propuesta de tienda online para un negocio de ropa deportiva y calzado: catálogo con filtros y búsqueda, favoritos, carrito editable y pedido directo por WhatsApp. Es una demo — no está en producción ni hay un acuerdo cerrado con el negocio.',
+          stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
+          url: 'https://totallooks.netlify.app/',
+        },
         {
           nombre: 'Olax',
           tipo: 'Sitio web + panel de administración',
@@ -498,13 +496,12 @@ export const translations = {
         url: 'https://olaxlatamoficial.com/',
         comingSoon: false,
       },
-      // Oculto temporalmente hasta tener una copia con marca ficticia.
-      // {
-      //   nombre: 'Tienda de ropa deportiva',
-      //   resumen: 'Online store demo with an editable cart and WhatsApp ordering',
-      //   url: 'https://totallooks.netlify.app/',
-      //   comingSoon: false,
-      // },
+      {
+        nombre: 'Tienda de ropa deportiva',
+        resumen: 'Online store demo with an editable cart and WhatsApp ordering',
+        url: 'https://totallooks.netlify.app/',
+        comingSoon: false,
+      },
       {
         nombre: 'Vera',
         resumen: 'Property search with buy and rent filters',
@@ -787,15 +784,14 @@ export const translations = {
       tituloLinea2: 'took off.',
       subtitulo: 'Our most recent work, in production and generating sales right now.',
       proyectos: [
-        // Oculto temporalmente hasta tener una copia con marca ficticia.
-        // {
-        //   nombre: 'Tienda de ropa deportiva',
-        //   tipo: 'Online store (demo)',
-        //   descripcion:
-        //     'Online store proposal for a sportswear and footwear business: catalog with filters and search, favorites, an editable cart, and direct ordering via WhatsApp. This is a demo — it is not in production and there is no signed agreement with the business.',
-        //   stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
-        //   url: 'https://totallooks.netlify.app/',
-        // },
+        {
+          nombre: 'Tienda de ropa deportiva',
+          tipo: 'Online store (demo)',
+          descripcion:
+            'Online store proposal for a sportswear and footwear business: catalog with filters and search, favorites, an editable cart, and direct ordering via WhatsApp. This is a demo — it is not in production and there is no signed agreement with the business.',
+          stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
+          url: 'https://totallooks.netlify.app/',
+        },
         {
           nombre: 'Olax',
           tipo: 'Website + admin panel',
