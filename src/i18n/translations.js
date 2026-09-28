@@ -342,7 +342,7 @@ export const translations = {
           tipo: 'Tienda online (demo)',
           descripcion:
             'Propuesta de tienda online para un negocio de ropa deportiva y calzado: catálogo con filtros y búsqueda, favoritos, carrito editable y pedido directo por WhatsApp. Es una demo — no está en producción ni hay un acuerdo cerrado con el negocio.',
-          stack: ['Next.js', 'Tailwind', 'WhatsApp'],
+          stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
           url: 'https://totallooks.netlify.app/',
         },
         {
@@ -780,7 +780,7 @@ export const translations = {
           tipo: 'Online store (demo)',
           descripcion:
             'Online store proposal for a sportswear and footwear business: catalog with filters and search, favorites, an editable cart, and direct ordering via WhatsApp. This is a demo — it is not in production and there is no signed agreement with the business.',
-          stack: ['Next.js', 'Tailwind', 'WhatsApp'],
+          stack: ['Next.js', 'Tailwind', 'WhatsApp', 'TypeScript'],
           url: 'https://totallooks.netlify.app/',
         },
         {
