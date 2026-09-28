@@ -6,6 +6,7 @@ import shopiPreview from '../assets/shopi-preview.png'
 import airesvalPreview from '../assets/airesval-preview.png'
 import veraPreview from '../assets/vera-preview.png'
 import casaclinicaPreview from '../assets/casaclinica-preview.png'
+import totallooksPreview from '../assets/totallooks-preview.png'
 
 const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
@@ -14,6 +15,7 @@ const PROJECT_PREVIEWS = {
   AiresVal: airesvalPreview,
   Vera: veraPreview,
   'Casa Clínica': casaclinicaPreview,
+  'Tienda de ropa deportiva': totallooksPreview,
 }
 
 function Portafolio() {

@@ -3,6 +3,7 @@ import heroNebula from '../assets/hero-supernova.jpg'
 import olaxPreview from '../assets/olax-preview.png'
 import veraPreview from '../assets/vera-preview.png'
 import casaclinicaPreview from '../assets/casaclinica-preview.png'
+import totallooksPreview from '../assets/totallooks-preview.png'
 import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
 import StarField from '../components/StarField'
@@ -12,6 +13,7 @@ const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
   Vera: veraPreview,
   'Casa Clínica': casaclinicaPreview,
+  'Tienda de ropa deportiva': totallooksPreview,
 }
 
 const SERVICE_ICONS = {
@@ -169,7 +171,7 @@ function Inicio() {
           <p className="mx-auto mt-4 max-w-xl text-slate">{t.trabajoReciente.subtitulo}</p>
         </Reveal>
 
-        <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2">
           {t.proyectosDestacados.map((proyecto, index) => {
             const CardTag = proyecto.url ? 'a' : 'div'
             return proyecto.comingSoon ? (
