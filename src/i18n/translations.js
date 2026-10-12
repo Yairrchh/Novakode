@@ -109,7 +109,7 @@ export const translations = {
     cookies: {
       titulo: 'Cookies',
       texto:
-        'Usamos el Pixel de Meta para medir qué funciona en nuestro sitio y mejorar nuestros anuncios. Solo se activa si lo aceptas.',
+        'Usamos el Pixel de Meta para medir y mejorar nuestros anuncios. Solo si lo aceptas.',
       masInfo: 'Más información',
       aceptar: 'Aceptar',
       rechazar: 'Rechazar',
@@ -573,7 +573,7 @@ export const translations = {
     cookies: {
       titulo: 'Cookies',
       texto:
-        'We use the Meta Pixel to measure what works on our site and improve our ads. It only turns on if you accept.',
+        'We use the Meta Pixel to measure and improve our ads. Only if you accept.',
       masInfo: 'More information',
       aceptar: 'Accept',
       rechazar: 'Decline',
