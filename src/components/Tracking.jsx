@@ -15,7 +15,7 @@ function Tracking() {
       if (!link) return
       const href = link.getAttribute('href')
       if (href.includes('wa.link')) {
-        trackEvent('Contact', { content_name: 'whatsapp' })
+        trackEvent('Contact', { content_name: 'whatsapp', plan: link.dataset.plan })
       } else if (href.startsWith('mailto:')) {
         trackEvent('Contact', { content_name: 'email' })
       }

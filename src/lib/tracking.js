@@ -124,7 +124,7 @@ export function trackPageView() {
 
 // Los eventos se nombran como en Meta; aquí se traducen al equivalente de GA4.
 const GA_EVENTS = {
-  Contact: (params) => ['contact', { method: params?.content_name }],
+  Contact: (params) => ['contact', { method: params?.content_name, plan: params?.plan }],
   Lead: () => ['generate_lead', {}],
 }
 

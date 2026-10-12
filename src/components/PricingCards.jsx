@@ -34,6 +34,9 @@ function planIcon(nombre) {
   return null
 }
 
+// Ids estables (no cambian con el idioma) para medir qué plan elige cada visitante.
+const PLAN_IDS = ['esencial', 'corporativo', 'a-medida']
+
 function PricingCards() {
   const { t } = useLanguage()
   const planes = t.planes
@@ -134,6 +137,7 @@ function PricingCards() {
               href="https://wa.link/ull0cb"
               target="_blank"
               rel="noreferrer"
+              data-plan={PLAN_IDS[index]}
               className={`mt-6 rounded-full px-6 py-3 text-center text-sm font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg ${
                 plan.dark
                   ? 'bg-paper text-night hover:shadow-white/10'
