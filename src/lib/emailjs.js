@@ -1,7 +1,7 @@
 // Credenciales de EmailJS (Account → API Keys, y Email Services / Email Templates).
 // La Public Key es pública por diseño. Vacío = el formulario no puede enviar.
 const SERVICE_ID = 'service_7t2dt4x'
-const TEMPLATE_ID = 'template_cz8mlsw'
+const TEMPLATE_ID = 'template_i3a6jle'
 const PUBLIC_KEY = 'yj7u36g26Uf0vnZI9'
 
 export async function sendContactEmail(params) {
