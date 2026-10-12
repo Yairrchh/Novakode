@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal'
 import Logo from '../components/Logo'
 import StarField from '../components/StarField'
 import { trackEvent } from '../lib/metaPixel'
+import { sendContactEmail } from '../lib/emailjs'
 
 const WhatsAppIcon = ({ className }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -45,12 +46,27 @@ const SOBRE_MI_ICONS = { bolt: BoltIcon, direct: DirectIcon, target: TargetIcon 
 function Contacto() {
   const { t } = useLanguage()
   const p = t.contacto_page
-  const [enviado, setEnviado] = useState(false)
+  const [estado, setEstado] = useState('idle')
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
-    trackEvent('Lead')
-    setEnviado(true)
+    const form = event.currentTarget
+    const data = new FormData(form)
+    setEstado('enviando')
+    try {
+      await sendContactEmail({
+        nombre: data.get('nombre'),
+        correo: data.get('correo'),
+        servicio: data.get('servicio'),
+        mensaje: data.get('mensaje'),
+      })
+      trackEvent('Lead')
+      form.reset()
+      setEstado('enviado')
+    } catch (err) {
+      console.error(err)
+      setEstado('error')
+    }
   }
 
   return (
@@ -180,14 +196,20 @@ function Contacto() {
 
             <button
               type="submit"
-              className="rounded-full bg-signal px-6 py-3 text-sm font-bold text-night transition-opacity hover:opacity-90"
+              disabled={estado === 'enviando'}
+              className="rounded-full bg-signal px-6 py-3 text-sm font-bold text-night transition-opacity hover:opacity-90 disabled:opacity-60"
             >
-              {p.form.enviar}
+              {estado === 'enviando' ? p.form.enviando : p.form.enviar}
             </button>
 
-            {enviado && (
+            {estado === 'enviado' && (
               <p className="text-xs font-bold uppercase tracking-widest text-signalDark">
                 {p.form.enviado}
+              </p>
+            )}
+            {estado === 'error' && (
+              <p role="alert" className="text-xs font-bold uppercase tracking-widest text-red-600">
+                {p.form.error}
               </p>
             )}
           </form>
