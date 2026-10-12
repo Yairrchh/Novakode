@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../i18n/LanguageContext'
-import { getBannerVisible, setConsent, subscribeConsent } from '../lib/metaPixel'
+import { getBannerVisible, setConsent, subscribeConsent } from '../lib/tracking'
 
 function CookieBanner() {
   const { t } = useLanguage()

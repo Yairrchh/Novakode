@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import { useLanguage } from '../i18n/LanguageContext'
-import { openCookiePreferences } from '../lib/metaPixel'
+import { openCookiePreferences } from '../lib/tracking'
 
 const SOCIAL_LINKS = [
   {

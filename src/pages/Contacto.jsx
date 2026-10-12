@@ -3,7 +3,7 @@ import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
 import Logo from '../components/Logo'
 import StarField from '../components/StarField'
-import { trackEvent } from '../lib/metaPixel'
+import { trackEvent } from '../lib/tracking'
 import { sendContactEmail } from '../lib/emailjs'
 
 const WhatsAppIcon = ({ className }) => (

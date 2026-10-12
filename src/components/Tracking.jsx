@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import { trackEvent, trackPageView } from '../lib/metaPixel'
+import { trackEvent, trackPageView } from '../lib/tracking'
 
-function MetaPixel() {
+function Tracking() {
   const { pathname } = useLocation()
 
   useEffect(() => {
@@ -27,4 +27,4 @@ function MetaPixel() {
   return null
 }
 
-export default MetaPixel
+export default Tracking
