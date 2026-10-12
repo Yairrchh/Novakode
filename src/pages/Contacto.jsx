@@ -3,6 +3,7 @@ import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
 import Logo from '../components/Logo'
 import StarField from '../components/StarField'
+import { trackEvent } from '../lib/metaPixel'
 
 const WhatsAppIcon = ({ className }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -48,6 +49,7 @@ function Contacto() {
 
   function handleSubmit(event) {
     event.preventDefault()
+    trackEvent('Lead')
     setEnviado(true)
   }
 

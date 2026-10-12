@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './i18n/LanguageContext'
 import Layout from './components/Layout'
 import ScrollToTop from './components/ScrollToTop'
+import MetaPixel from './components/MetaPixel'
 import Inicio from './pages/Inicio'
 import Servicios from './pages/Servicios'
 import Portafolio from './pages/Portafolio'
@@ -14,6 +15,7 @@ function App() {
     <LanguageProvider>
       <BrowserRouter>
         <ScrollToTop />
+        <MetaPixel />
         <Routes>
           <Route element={<Layout />}>
             <Route index element={<Inicio />} />
