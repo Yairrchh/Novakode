@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import { useLanguage } from '../i18n/LanguageContext'
+import { openCookiePreferences } from '../lib/metaPixel'
 
 const SOCIAL_LINKS = [
   {
@@ -104,6 +105,15 @@ function Footer() {
               <Link to="/terminos" className="transition-colors hover:text-signalDark">
                 {t.footer.terminos}
               </Link>
+            </li>
+            <li>
+              <button
+                type="button"
+                onClick={openCookiePreferences}
+                className="text-left transition-colors hover:text-signalDark"
+              >
+                {t.footer.cookies}
+              </button>
             </li>
           </ul>
         </div>

@@ -106,6 +106,14 @@ export const translations = {
         },
       ],
     },
+    cookies: {
+      titulo: 'Cookies',
+      texto:
+        'Usamos el Pixel de Meta para medir qué funciona en nuestro sitio y mejorar nuestros anuncios. Solo se activa si lo aceptas.',
+      masInfo: 'Más información',
+      aceptar: 'Aceptar',
+      rechazar: 'Rechazar',
+    },
     footer: {
       tagline: 'Sitios web, tiendas online y chatbots de WhatsApp para negocios que quieren vender mejor.',
       explorar: 'Explorar',
@@ -113,6 +121,7 @@ export const translations = {
       legal: 'Legal',
       privacidad: 'Política de Privacidad',
       terminos: 'Términos y Condiciones',
+      cookies: 'Preferencias de cookies',
       derechos: 'Todos los derechos reservados.',
       creditoPrefix: 'Foto del hero:',
       creditoSuffix: '(recortada), CC BY 4.0',
@@ -139,7 +148,7 @@ export const translations = {
         {
           titulo: '4. Terceros y stack tecnológico',
           texto:
-            'Para prestar nuestros servicios trabajamos con proveedores tecnológicos de confianza que pueden procesar datos en nuestro nombre:\n\nHosting e infraestructura: Vercel, Netlify, Hostinger o GoDaddy, según el proyecto.\nBase de datos y backend: Supabase.\nEnvío de formularios: EmailJS.\nAnalítica: Google Analytics.\nPublicidad y medición: Meta Pixel (Meta Platforms), que registra visitas y acciones en el sitio, como clics en WhatsApp o envíos del formulario, para medir y mejorar nuestros anuncios.\n\nNo vendemos ni alquilamos tus datos a terceros con fines comerciales. Nunca.',
+            'Para prestar nuestros servicios trabajamos con proveedores tecnológicos de confianza que pueden procesar datos en nuestro nombre:\n\nHosting e infraestructura: Vercel, Netlify, Hostinger o GoDaddy, según el proyecto.\nBase de datos y backend: Supabase.\nEnvío de formularios: EmailJS.\nAnalítica: Google Analytics.\nPublicidad y medición: Meta Pixel (Meta Platforms), que registra visitas y acciones en el sitio, como clics en WhatsApp o envíos del formulario, para medir y mejorar nuestros anuncios. Solo se activa si lo aceptas en el aviso de cookies, y puedes cambiar tu decisión cuando quieras desde \"Preferencias de cookies\" en el pie de página.\n\nNo vendemos ni alquilamos tus datos a terceros con fines comerciales. Nunca.',
         },
         {
           titulo: '5. Tus derechos',
@@ -561,6 +570,14 @@ export const translations = {
         },
       ],
     },
+    cookies: {
+      titulo: 'Cookies',
+      texto:
+        'We use the Meta Pixel to measure what works on our site and improve our ads. It only turns on if you accept.',
+      masInfo: 'More information',
+      aceptar: 'Accept',
+      rechazar: 'Decline',
+    },
     footer: {
       tagline: 'Websites, online stores and WhatsApp chatbots for businesses that want to sell better.',
       explorar: 'Explore',
@@ -568,6 +585,7 @@ export const translations = {
       legal: 'Legal',
       privacidad: 'Privacy Policy',
       terminos: 'Terms & Conditions',
+      cookies: 'Cookie preferences',
       derechos: 'All rights reserved.',
       creditoPrefix: 'Hero photo:',
       creditoSuffix: '(cropped), CC BY 4.0',
@@ -594,7 +612,7 @@ export const translations = {
         {
           titulo: '4. Third parties & tech stack',
           texto:
-            "To deliver our services we work with trusted technology providers that may process data on our behalf:\n\nHosting & infrastructure: Vercel, Netlify, Hostinger or GoDaddy, depending on the project.\nDatabase & backend: Supabase.\nForm delivery: EmailJS.\nAnalytics: Google Analytics.\nAdvertising & measurement: Meta Pixel (Meta Platforms), which records visits and actions on the site, such as WhatsApp clicks or form submissions, to measure and improve our ads.\n\nWe never sell or rent your data to third parties for commercial purposes. Ever.",
+            "To deliver our services we work with trusted technology providers that may process data on our behalf:\n\nHosting & infrastructure: Vercel, Netlify, Hostinger or GoDaddy, depending on the project.\nDatabase & backend: Supabase.\nForm delivery: EmailJS.\nAnalytics: Google Analytics.\nAdvertising & measurement: Meta Pixel (Meta Platforms), which records visits and actions on the site, such as WhatsApp clicks or form submissions, to measure and improve our ads. It only turns on if you accept it in the cookie notice, and you can change your choice any time from \"Cookie preferences\" in the footer.\n\nWe never sell or rent your data to third parties for commercial purposes. Ever.",
         },
         {
           titulo: '5. Your rights',
