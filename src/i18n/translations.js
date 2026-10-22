@@ -369,6 +369,14 @@ export const translations = {
           url: 'https://olaxlatamoficial.com/',
         },
         {
+          nombre: 'Grupo Shekina',
+          tipo: 'Sitio web + aula virtual',
+          descripcion:
+            'Sitio para un fabricante de productos de limpieza en Venezuela. Incluye catálogo por línea, solicitud de cotización, un aula virtual con cursos en video y pagos con comprobante, y un panel de administración para gestionar cursos y aprobar pagos.',
+          stack: ['Next.js', 'Tailwind', 'Supabase', 'Resend', 'TypeScript'],
+          url: 'https://gruposhekina.com/',
+        },
+        {
           nombre: 'ElectroNova',
           tipo: 'Tienda online al mayor (demo)',
           descripcion:
@@ -830,6 +838,14 @@ export const translations = {
             'Site for a technology wholesaler in Miami. Includes a product catalog filterable by category, a directory of authorized distributors by region, and a private, authenticated panel so the team can manage content without depending on us.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase', 'EmailJS'],
           url: 'https://olaxlatamoficial.com/',
+        },
+        {
+          nombre: 'Grupo Shekina',
+          tipo: 'Website + online classroom',
+          descripcion:
+            'Site for a cleaning-products manufacturer in Venezuela. Includes a catalog by product line, quote requests, an online classroom with video courses and payment by receipt, and an admin panel to manage courses and approve payments.',
+          stack: ['Next.js', 'Tailwind', 'Supabase', 'Resend', 'TypeScript'],
+          url: 'https://gruposhekina.com/',
         },
         {
           nombre: 'ElectroNova',

@@ -7,10 +7,12 @@ import airesvalPreview from '../assets/airesval-preview.png'
 import veraPreview from '../assets/vera-preview.png'
 import casaclinicaPreview from '../assets/casaclinica-preview.png'
 import totallooksPreview from '../assets/totallooks-preview.png'
+import shekinaPreview from '../assets/shekina-preview.png'
 import milexusPreview from '../assets/milexus-preview.png'
 
 const PROJECT_PREVIEWS = {
   Olax: olaxPreview,
+  'Grupo Shekina': shekinaPreview,
   Todoticket: todoticketPreview,
   Shopi: shopiPreview,
   AiresVal: airesvalPreview,
