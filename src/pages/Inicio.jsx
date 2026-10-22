@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import heroNebula from '../assets/hero-supernova.jpg'
 import olaxPreview from '../assets/olax-preview.png'
 import veraPreview from '../assets/vera-preview.png'
 import casaclinicaPreview from '../assets/casaclinica-preview.png'
@@ -87,7 +86,7 @@ function Inicio() {
     <>
       <section
         className="relative overflow-hidden bg-cover bg-[center_45%] bg-night"
-        style={{ backgroundImage: `url(${heroNebula})` }}
+        style={{ backgroundImage: `url(/hero-supernova.webp)` }}
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_65%_60%_at_50%_48%,rgba(15,20,32,0.88)_0%,rgba(15,20,32,0.55)_55%,rgba(15,20,32,0.1)_85%,rgba(15,20,32,0)_100%)]" />
         <div className="absolute inset-0 bg-gradient-to-b from-night/40 via-night/55 to-night" />
