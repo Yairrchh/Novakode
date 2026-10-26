@@ -43,6 +43,12 @@ export const translations = {
     },
     proyectosDestacados: [
       {
+        nombre: 'Grupo Shekina',
+        resumen: 'Sitio de productos de limpieza + aula virtual con cursos y pagos',
+        url: 'https://gruposhekina.com/',
+        comingSoon: false,
+      },
+      {
         nombre: 'Olax',
         resumen: 'Rediseño web + panel de administración',
         url: 'https://olaxlatamoficial.com/',
@@ -353,6 +359,14 @@ export const translations = {
       subtitulo: 'Nuestros trabajos más recientes, en producción y generando ventas ahora mismo.',
       proyectos: [
         {
+          nombre: 'Grupo Shekina',
+          tipo: 'Sitio web + aula virtual',
+          descripcion:
+            'Sitio para un fabricante de productos de limpieza en Venezuela. Incluye catálogo por línea, solicitud de cotización, un aula virtual con cursos en video y pagos con comprobante, y un panel de administración para gestionar cursos y aprobar pagos.',
+          stack: ['Next.js', 'Tailwind', 'Supabase', 'Resend', 'TypeScript'],
+          url: 'https://gruposhekina.com/',
+        },
+        {
           nombre: 'Urban Sport',
           tipo: 'Tienda online (demo)',
           descripcion:
@@ -367,14 +381,6 @@ export const translations = {
             'Sitio para un mayorista de tecnología en Miami. Incluye catálogo de productos filtrable por categoría, listado de distribuidores autorizados por región y un panel privado, con autenticación, para que el equipo administre el contenido sin depender de nosotros.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase', 'EmailJS'],
           url: 'https://olaxlatamoficial.com/',
-        },
-        {
-          nombre: 'Grupo Shekina',
-          tipo: 'Sitio web + aula virtual',
-          descripcion:
-            'Sitio para un fabricante de productos de limpieza en Venezuela. Incluye catálogo por línea, solicitud de cotización, un aula virtual con cursos en video y pagos con comprobante, y un panel de administración para gestionar cursos y aprobar pagos.',
-          stack: ['Next.js', 'Tailwind', 'Supabase', 'Resend', 'TypeScript'],
-          url: 'https://gruposhekina.com/',
         },
         {
           nombre: 'ElectroNova',
@@ -514,6 +520,12 @@ export const translations = {
       subtitulo: 'Explore some of the websites and online stores we\'ve designed from start to finish.',
     },
     proyectosDestacados: [
+      {
+        nombre: 'Grupo Shekina',
+        resumen: 'Cleaning-products site + online classroom with courses and payments',
+        url: 'https://gruposhekina.com/',
+        comingSoon: false,
+      },
       {
         nombre: 'Olax',
         resumen: 'Website redesign + admin panel',
@@ -824,6 +836,14 @@ export const translations = {
       subtitulo: 'Our most recent work, in production and generating sales right now.',
       proyectos: [
         {
+          nombre: 'Grupo Shekina',
+          tipo: 'Website + online classroom',
+          descripcion:
+            'Site for a cleaning-products manufacturer in Venezuela. Includes a catalog by product line, quote requests, an online classroom with video courses and payment by receipt, and an admin panel to manage courses and approve payments.',
+          stack: ['Next.js', 'Tailwind', 'Supabase', 'Resend', 'TypeScript'],
+          url: 'https://gruposhekina.com/',
+        },
+        {
           nombre: 'Urban Sport',
           tipo: 'Online store (demo)',
           descripcion:
@@ -838,14 +858,6 @@ export const translations = {
             'Site for a technology wholesaler in Miami. Includes a product catalog filterable by category, a directory of authorized distributors by region, and a private, authenticated panel so the team can manage content without depending on us.',
           stack: ['React', 'Vite', 'Tailwind', 'Supabase', 'EmailJS'],
           url: 'https://olaxlatamoficial.com/',
-        },
-        {
-          nombre: 'Grupo Shekina',
-          tipo: 'Website + online classroom',
-          descripcion:
-            'Site for a cleaning-products manufacturer in Venezuela. Includes a catalog by product line, quote requests, an online classroom with video courses and payment by receipt, and an admin panel to manage courses and approve payments.',
-          stack: ['Next.js', 'Tailwind', 'Supabase', 'Resend', 'TypeScript'],
-          url: 'https://gruposhekina.com/',
         },
         {
           nombre: 'ElectroNova',

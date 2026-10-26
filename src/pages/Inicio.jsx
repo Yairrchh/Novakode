@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import olaxPreview from '../assets/olax-preview.png'
+import shekinaPreview from '../assets/shekina-preview.png'
 import veraPreview from '../assets/vera-preview.png'
 import casaclinicaPreview from '../assets/casaclinica-preview.png'
 import totallooksPreview from '../assets/totallooks-preview.png'
@@ -10,6 +11,7 @@ import StarField from '../components/StarField'
 import PricingCards from '../components/PricingCards'
 
 const PROJECT_PREVIEWS = {
+  'Grupo Shekina': shekinaPreview,
   Olax: olaxPreview,
   Vera: veraPreview,
   'Casa Clínica': casaclinicaPreview,
