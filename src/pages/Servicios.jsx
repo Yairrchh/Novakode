@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../i18n/LanguageContext'
 import Reveal from '../components/Reveal'
@@ -13,6 +14,104 @@ const WrenchIcon = ({ className }) => (
     />
   </svg>
 )
+
+// Steps timeline whose line fills as the reader scrolls past each step.
+function ProcessTimeline({ steps }) {
+  const containerRef = useRef(null)
+  const trackRef = useRef(null)
+  const fillRef = useRef(null)
+  const dotRefs = useRef([])
+  const [reached, setReached] = useState(0)
+
+  useEffect(() => {
+    const container = containerRef.current
+    const track = trackRef.current
+    const fill = fillRef.current
+    if (!container || !track || !fill) return
+
+    let raf = 0
+    const update = () => {
+      raf = 0
+      const rect = container.getBoundingClientRect()
+      // The line runs from the center of the first circle to the center of the last.
+      const centers = dotRefs.current
+        .filter(Boolean)
+        .map((dot) => {
+          const d = dot.getBoundingClientRect()
+          return d.top + d.height / 2 - rect.top
+        })
+      if (centers.length === 0) return
+      const top = centers[0]
+      const lineLength = centers[centers.length - 1] - top
+      track.style.top = `${top}px`
+      track.style.height = `${lineLength}px`
+      fill.style.top = `${top}px`
+      fill.style.height = `${lineLength}px`
+
+      // The "reading line" sits at 60% of the viewport height.
+      const y = window.innerHeight * 0.6 - rect.top - top
+      const filled = Math.max(0, Math.min(lineLength, y))
+      fill.style.transform = `scaleY(${lineLength > 0 ? filled / lineLength : 0})`
+
+      const count = centers.filter((c) => c - top <= filled).length
+      setReached(count)
+    }
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(update)
+    }
+
+    update()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
+  }, [])
+
+  return (
+    <div ref={containerRef} className="relative mx-auto mt-10 max-w-2xl">
+      <div ref={trackRef} className="absolute left-5 w-px bg-edge" />
+      <div
+        ref={fillRef}
+        className="absolute left-5 w-px origin-top bg-signal shadow-[0_0_8px_rgba(41,197,246,0.7)]"
+        style={{ transform: 'scaleY(0)' }}
+      />
+
+      <div className="flex flex-col gap-2">
+        {steps.map((paso, index) => (
+          <Reveal
+            key={paso.numero}
+            delay={index * 90}
+            y={16}
+            className="grid grid-cols-[2.5rem_1fr] items-start gap-4"
+          >
+            <div className="peer relative z-10 mt-4 flex justify-center">
+              <span
+                ref={(el) => {
+                  dotRefs.current[index] = el
+                }}
+                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 bg-card text-sm font-bold transition-colors duration-300 hover:border-signal hover:text-signalDark ${
+                  index < reached ? 'border-signal text-signalDark' : 'border-edge text-slate'
+                }`}
+              >
+                {paso.numero}
+              </span>
+            </div>
+
+            <div className="rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-signal hover:bg-card hover:shadow-md peer-hover:border-signal peer-hover:bg-card peer-hover:shadow-md">
+              <h3 className="text-base font-bold text-ink">
+                {paso.numero}. {paso.titulo}
+              </h3>
+              <p className="mt-1.5 text-sm text-slate">{paso.detalle}</p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 function Servicios() {
   const { t } = useLanguage()
@@ -65,7 +164,7 @@ function Servicios() {
       </div>
 
       <section className="relative overflow-hidden bg-night px-6 py-20 text-center">
-        <StarField starCount={18} shootingStars={false} />
+        <StarField starCount={18} shootingStars={false} intensity={2.5} />
         <Reveal className="relative">
         <h2 className="mx-auto max-w-2xl text-2xl font-extrabold text-paper md:text-3xl">
           {p.ctaPlanes.titulo}
@@ -73,7 +172,7 @@ function Servicios() {
         <p className="mx-auto mt-4 max-w-lg text-[#dbe4ef]">{p.ctaPlanes.subtitulo}</p>
         <Link
           to="/contacto"
-          className="mt-8 inline-block rounded-full bg-signal px-7 py-3.5 text-sm font-bold text-night shadow-[0_0_24px_rgba(41,197,246,0.35)] transition-opacity hover:opacity-90"
+          className="mt-8 inline-block rounded-full bg-signal px-7 py-3.5 text-sm font-bold text-night shadow-[0_0_24px_rgba(41,197,246,0.35)] btn-shine"
         >
           {p.ctaPlanes.boton}
         </Link>
@@ -87,33 +186,7 @@ function Servicios() {
           <p className="mx-auto mt-3 max-w-xl text-slate">{t.proceso.subtitulo}</p>
         </Reveal>
 
-        <div className="relative mx-auto mt-10 max-w-2xl">
-          <div className="absolute left-5 top-4 bottom-4 w-px bg-edge" />
-
-          <div className="flex flex-col gap-2">
-            {t.proceso.pasos.map((paso, index) => (
-              <Reveal
-                key={paso.numero}
-                delay={index * 90}
-                y={16}
-                className="grid grid-cols-[2.5rem_1fr] items-start gap-4"
-              >
-                <div className="peer relative z-10 mt-4 flex justify-center">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-edge bg-card text-sm font-bold text-slate transition-colors duration-300 hover:border-signal hover:text-signalDark">
-                    {paso.numero}
-                  </span>
-                </div>
-
-                <div className="rounded-xl border border-transparent p-4 transition-all duration-300 hover:border-signal hover:bg-card hover:shadow-md peer-hover:border-signal peer-hover:bg-card peer-hover:shadow-md">
-                  <h3 className="text-base font-bold text-ink">
-                    {paso.numero}. {paso.titulo}
-                  </h3>
-                  <p className="mt-1.5 text-sm text-slate">{paso.detalle}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
+        <ProcessTimeline steps={t.proceso.pasos} />
       </div>
     </>
   )

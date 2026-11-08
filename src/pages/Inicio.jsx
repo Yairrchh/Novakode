@@ -81,6 +81,35 @@ const COMMITMENT_ICONS = {
   ),
 }
 
+// Hero title split into words so each one can fade up in sequence on load.
+function HeroTitle({ before, accent, after }) {
+  const words = [
+    ...before.trim().split(/\s+/).map((text) => ({ text })),
+    ...accent.trim().split(/\s+/).map((text) => ({ text, accent: true })),
+    ...after.trim().split(/\s+/).map((text) => ({ text })),
+  ]
+  const label = `${before}${accent}${after}`
+
+  return (
+    <h1
+      aria-label={label}
+      className="mx-auto max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-paper [text-shadow:0_2px_20px_rgba(0,0,0,0.6)] md:text-6xl"
+    >
+      {words.map((word, i) => (
+        <span key={i} aria-hidden="true">
+          {i > 0 && ' '}
+          <span
+            className={`word-reveal ${word.accent ? 'text-signal' : ''}`}
+            style={{ animationDelay: `${150 + i * 110}ms` }}
+          >
+            {word.text}
+          </span>
+        </span>
+      ))}
+    </h1>
+  )
+}
+
 function Inicio() {
   const { t } = useLanguage()
 
@@ -95,26 +124,26 @@ function Inicio() {
         <StarField />
 
         <div className="relative mx-auto max-w-3xl px-6 pb-10 pt-14 text-center md:pb-14 md:pt-20">
-          <Reveal as="h1" y={16} className="mx-auto max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-paper [text-shadow:0_2px_20px_rgba(0,0,0,0.6)] md:text-6xl">
-            {t.hero.titleBefore}
-            <span className="text-signal">{t.hero.titleAccent}</span>
-            {t.hero.titleAfter}
-          </Reveal>
+          <HeroTitle
+            before={t.hero.titleBefore}
+            accent={t.hero.titleAccent}
+            after={t.hero.titleAfter}
+          />
 
-          <Reveal as="p" y={16} delay={150} className="mx-auto mt-6 max-w-lg text-[#dbe4ef] [text-shadow:0_2px_16px_rgba(0,0,0,0.85)] md:text-lg">
+          <Reveal as="p" y={16} delay={700} className="mx-auto mt-6 max-w-lg text-[#dbe4ef] [text-shadow:0_2px_16px_rgba(0,0,0,0.85)] md:text-lg">
             {t.hero.subtitle}
           </Reveal>
 
-          <Reveal y={16} delay={300} className="mt-10 flex flex-wrap justify-center gap-4">
+          <Reveal y={16} delay={850} className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
               to="/servicios"
-              className="rounded-full bg-signal px-7 py-3.5 text-sm font-bold text-night shadow-[0_0_24px_rgba(41,197,246,0.35)] transition-opacity hover:opacity-90"
+              className="rounded-full bg-signal px-7 py-3.5 text-sm font-bold text-night shadow-[0_0_24px_rgba(41,197,246,0.35)] btn-shine"
             >
               {t.hero.ctaPrimary}
             </Link>
             <Link
               to="/contacto"
-              className="rounded-full border border-white/30 bg-white/[0.06] px-7 py-3.5 text-sm font-semibold text-paper backdrop-blur transition-colors hover:border-signal hover:text-signal"
+              className="rounded-full border border-white/30 bg-white/[0.06] px-7 py-3.5 text-sm font-semibold text-paper backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-signal hover:text-signal"
             >
               {t.hero.ctaSecondary}
             </Link>
@@ -279,7 +308,7 @@ function Inicio() {
       </section>
 
       <section className="relative overflow-hidden bg-night px-6 py-20 text-center">
-        <StarField starCount={18} shootingStars={false} />
+        <StarField starCount={18} shootingStars={false} intensity={2.5} />
         <Reveal className="relative">
           <h2 className="mx-auto max-w-2xl text-3xl font-extrabold text-paper md:text-4xl">
             {t.ctaFinal.titulo}
@@ -289,7 +318,7 @@ function Inicio() {
             href="https://wa.link/ull0cb"
             target="_blank"
             rel="noreferrer"
-            className="mt-8 inline-block rounded-full bg-signal px-7 py-3.5 text-sm font-bold text-night shadow-[0_0_24px_rgba(41,197,246,0.35)] transition-opacity hover:opacity-90"
+            className="mt-8 inline-block rounded-full bg-signal px-7 py-3.5 text-sm font-bold text-night shadow-[0_0_24px_rgba(41,197,246,0.35)] btn-shine"
           >
             {t.ctaFinal.boton}
           </a>

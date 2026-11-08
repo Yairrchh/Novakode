@@ -28,7 +28,7 @@ function CookieBanner() {
         <button
           type="button"
           onClick={() => setConsent('granted')}
-          className="rounded-full bg-signal px-4 py-1.5 text-xs font-bold text-night transition-opacity hover:opacity-90"
+          className="rounded-full bg-signal px-4 py-1.5 text-xs font-bold text-night btn-shine"
         >
           {c.aceptar}
         </button>

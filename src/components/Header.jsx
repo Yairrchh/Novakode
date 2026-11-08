@@ -43,7 +43,7 @@ function Header() {
           <LanguageSwitch />
           <NavLink
             to="/contacto"
-            className="hidden rounded-full bg-signal px-6 py-2.5 text-sm font-bold text-night transition-opacity hover:opacity-90 md:inline-block"
+            className="hidden rounded-full bg-signal px-6 py-2.5 text-sm font-bold text-night btn-shine md:inline-block"
           >
             {t.cta}
           </NavLink>

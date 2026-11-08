@@ -83,7 +83,7 @@ function Contacto() {
 
       <div className="mt-16 grid gap-16 md:grid-cols-2">
         <Reveal className="relative overflow-hidden rounded-2xl border border-signal/20 bg-night p-8 text-paper">
-          <StarField starCount={16} shootingStars={false} />
+          <StarField starCount={16} shootingStars={false} intensity={2.5} />
           <div className="relative z-10 flex flex-col gap-6">
             <Logo />
 
@@ -197,7 +197,7 @@ function Contacto() {
             <button
               type="submit"
               disabled={estado === 'enviando'}
-              className="rounded-full bg-signal px-6 py-3 text-sm font-bold text-night transition-opacity hover:opacity-90 disabled:opacity-60"
+              className="rounded-full bg-signal px-6 py-3 text-sm font-bold text-night btn-shine disabled:opacity-60"
             >
               {estado === 'enviando' ? p.form.enviando : p.form.enviar}
             </button>
