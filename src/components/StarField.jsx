@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react'
+import Snowfall from './Snowfall'
+import { isHolidaySeason } from '../lib/season'
 
 // Manual nudges for specific star indexes that land on top of headline text
 // (e.g. index 20 used to sit right over the hero's "Tu" — moved to a clear
@@ -169,6 +171,7 @@ function StarField({ starCount = 45, shootingStars = true, intensity = 1 }) {
             ))}
         </div>
       </div>
+      {isHolidaySeason() && <Snowfall count={Math.round(starCount * 0.4)} />}
     </div>
   )
 }

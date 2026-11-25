@@ -99,6 +99,52 @@
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85));
 }
 
+/* Holiday snow (see Snowfall.jsx) */
+@keyframes snow-fall {
+  from {
+    transform: translateY(-3%);
+  }
+  to {
+    transform: translateY(103%);
+  }
+}
+
+@keyframes snow-sway {
+  from {
+    transform: translateX(-10px) rotate(-20deg);
+  }
+  to {
+    transform: translateX(10px) rotate(20deg);
+  }
+}
+
+.snow-rail {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  animation: snow-fall linear infinite;
+}
+
+.snow-flake {
+  display: block;
+  color: #dff4ff;
+  opacity: 0.55;
+  animation: snow-sway ease-in-out infinite alternate;
+}
+
+.snow-dot {
+  display: block;
+  border-radius: 9999px;
+  background: radial-gradient(circle, currentColor 30%, transparent 75%);
+}
+
+/* Frozen flakes would look like specks on the text, so hide them entirely. */
+@media (prefers-reduced-motion: reduce) {
+  .snow-rail {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -17,7 +17,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-surface/95 backdrop-blur">
       <div className="flex items-center justify-between px-6 py-4 md:px-10">
         <NavLink to="/" className="text-lg">
-          <Logo />
+          <Logo festive />
         </NavLink>
 
         <nav className="hidden items-center gap-6 md:flex">
